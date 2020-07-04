@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RentSystem.Barco" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Barco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.DuasRodas" Collapsed="true">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DuasRodas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Ligeiro">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="RentSystem.QuatroRodas" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.441" />
+        <Point X="8.5" Y="4.375" />
+        <Point X="10" Y="4.375" />
+        <Point X="10" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAACgABAAABAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Ligeiro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Maritimo" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Maritimo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Moto">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Moto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Pesado">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Pesado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Program">
+    <Position X="10.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAIBCAAQIAAQAAAAAAAAAAgARAAAIBg=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.QuatroRodas" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuatroRodas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Terreste" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Terreste.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentSystem.Veiculo">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAEAAAAAADAAAAQAIEAAAAAAIgEAAAQEBA=</HashCode>
+      <FileName>Veiculo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
