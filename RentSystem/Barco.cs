@@ -30,5 +30,28 @@ namespace RentSystem
             }
             return false;
         }
+        public static bool ValidarDisponivel(int id)
+        {
+            if (listaDeBarcos.Count > 0)
+            {
+                foreach (Barco f in listaDeBarcos)
+                { if (f.Id == id && f.Disponibilidade) return true; }
+            }
+            Console.WriteLine("Barco com id: " + id + " não encontrado");
+            return false;
+        }
+        public static bool Arrendar(int id)
+        {
+            foreach (Barco item in listaDeBarcos)
+            {
+                if (item.Id == id)
+                {
+                    item.Disponibilidade = false;
+                    Console.WriteLine("Barco com id: " + id + " foi reservado");
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

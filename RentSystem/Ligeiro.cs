@@ -60,5 +60,28 @@ namespace RentSystem
             }
             return false;
         }
+        public static bool ValidarDisponivel(int id)
+        {
+            if (listaDeLigeiros.Count > 0)
+            {
+                foreach (Ligeiro f in listaDeLigeiros)
+                { if (f.Id == id && f.Disponibilidade) return true; }
+            }
+            Console.WriteLine("Ligeiro com id: " + id + " não encontrado");
+            return false;
+        }
+        public static bool Arrendar(int id)
+        {
+            foreach (Ligeiro item in listaDeLigeiros)
+            {
+                if (item.Id == id)
+                {
+                    item.Disponibilidade = false;
+                    Console.WriteLine("Ligeiro com id: " + id + " foi reservado");
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

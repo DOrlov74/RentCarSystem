@@ -60,5 +60,28 @@ namespace RentSystem
             }
             return false;
         }
+        public static bool ValidarDisponivel(int id)
+        {
+            if (listaDePesados.Count > 0)
+            {
+                foreach (Pesado f in listaDePesados)
+                { if (f.Id == id && f.Disponibilidade) return true; }
+            }
+            Console.WriteLine("Pesado com id: " + id + " não encontrado");
+            return false;
+        }
+        public static bool Arrendar(int id)
+        {
+            foreach (Pesado item in listaDePesados)
+            {
+                if (item.Id == id)
+                {
+                    item.Disponibilidade = false;
+                    Console.WriteLine("Pesado com id: " + id + " foi reservado");
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

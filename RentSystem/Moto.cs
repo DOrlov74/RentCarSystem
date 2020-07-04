@@ -30,5 +30,28 @@ namespace RentSystem
             }
             return false;
         }
+        public static bool ValidarDisponivel(int id)
+        {
+            if (listaDeMotos.Count > 0)
+            {
+                foreach (Moto f in listaDeMotos)
+                { if (f.Id == id && f.Disponibilidade) return true; }
+            }
+            Console.WriteLine("Moto com id: " + id + " não encontrado");
+            return false;
+        }
+        public static bool Arrendar(int id)
+        {
+            foreach (Moto item in listaDeMotos)
+            {
+                if (item.Id == id)
+                {
+                    item.Disponibilidade=false;
+                    Console.WriteLine("Moto com id: " + id + " foi reservado");
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
